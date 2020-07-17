@@ -1,7 +1,7 @@
 {
   "name": "@ignatiusmb/elements-svelte",
   "author": "Ignatius Bagus",
-  "description": "Reusable web components with Svelte",
+  "description": "Reusable and functional web components with Svelte",
   "version": "1.0.0",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
