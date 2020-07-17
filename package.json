@@ -1,0 +1,37 @@
+{
+  "name": "@ignatiusmb/elements-svelte",
+  "author": "Ignatius Bagus",
+  "description": "Reusable web components with Svelte",
+  "version": "1.0.0",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "keywords": [
+    "svelte",
+    "reusable",
+    "elements",
+    "components",
+    "styles"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignatiusmb/elements-svelte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignatiusmb/elements-svelte/issues"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.21.0",
+    "rollup-plugin-svelte": "^5.2.3",
+    "svelte": "^3.24.0"
+  }
+}
