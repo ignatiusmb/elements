@@ -1,9 +1,9 @@
 {
-  "name": "@ignatiusmb/elements-svelte",
+  "name": "@ignatiusmb/elements",
   "author": "Ignatius Bagus",
   "description": "Reusable and functional web components with Svelte",
   "version": "1.0.0",
-  "svelte": "src/index.js",
+  "svelte": "svelte/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "keywords": [
@@ -15,10 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ignatiusmb/elements-svelte.git"
+    "url": "git+https://github.com/ignatiusmb/elements.git"
   },
   "bugs": {
-    "url": "https://github.com/ignatiusmb/elements-svelte/issues"
+    "url": "https://github.com/ignatiusmb/elements/issues"
   },
   "files": [
     "src",
