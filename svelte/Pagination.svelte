@@ -20,9 +20,11 @@
 	<span class:disabled={$store === 0} on:click|preventDefault={() => setPage($store - 1)}>
 		<Icon name="chevron-left" />
 	</span>
-	<slot>
+
+	<slot {curr} {next} {limit}>
 		<div>{curr} - {next} / {total}</div>
 	</slot>
+
 	<span class:disabled={$store === limit} on:click|preventDefault={() => setPage($store + 1)}>
 		<Icon name="chevron-right" />
 	</span>
