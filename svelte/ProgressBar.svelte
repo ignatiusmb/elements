@@ -1,8 +1,4 @@
 <script>
-	export let z = 3;
-	export let top = 0;
-	export let size = 0.25;
-	export let color = '#990000';
 	let y, innerHeight, mounted;
 	import { onMount } from 'svelte';
 	onMount(() => (mounted = true));
@@ -10,12 +6,16 @@
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight />
-<div style="z-index:{z}; top:{top}; height:{size}em; background-color:{color}; transform:translateX({progress}%)" />
+<div class="elements progress-bar" style="transform:translateX({progress}%)" />
 
 <style>
-	div {
+	div.elements.progress-bar {
+		z-index: 3;
 		position: fixed;
+		top: 0;
 		left: -100%;
 		width: 100%;
+		height: 0.25em;
+		background-color: #990000;
 	}
 </style>
