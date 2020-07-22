@@ -1,6 +1,6 @@
 <script>
 	export let href = '';
-	export let download = false;
+	export let download = null;
 	export let newTab = false;
 	export let label = null;
 	export let inherit = false;
