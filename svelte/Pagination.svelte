@@ -1,6 +1,5 @@
 <script>
 	export let store, total, bound;
-	export let maxWidth = 32;
 	import Icon from './Icon.svelte';
 	function setPage(index) {
 		if (index < 0) return;
@@ -13,7 +12,7 @@
 	$: limit = Math.floor(total / bound);
 </script>
 
-<section style="max-width: {maxWidth}em;">
+<section class="elements pagination">
 	<span class:disabled={$store === 0} on:click|preventDefault={() => setPage(0)}>
 		<Icon name="chevrons-left" />
 	</span>
@@ -35,6 +34,7 @@
 
 <style>
 	section {
+		max-width: 32em;
 		width: 100%;
 		display: grid;
 		gap: 0.5em;
