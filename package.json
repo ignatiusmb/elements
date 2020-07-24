@@ -2,7 +2,7 @@
   "name": "@ignatiusmb/elements",
   "author": "Ignatius Bagus",
   "description": "Reusable and functional web components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "svelte": "svelte/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -21,7 +21,7 @@
     "url": "https://github.com/ignatiusmb/elements/issues"
   },
   "files": [
-    "src",
+    "svelte",
     "dist"
   ],
   "scripts": {
