@@ -5,7 +5,7 @@
 </script>
 
 {#if show}
-	<div class="elements backdrop" on:click|self={() => (show = false)}>
+	<div class="elements modal-backdrop" on:click|self={() => (show = false)}>
 		<section class="elements modal-content" transition:fly={{ duration }}>
 			<slot>
 				<code>section.modal-content</code>

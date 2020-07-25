@@ -36,7 +36,7 @@
 	});
 </script>
 
-<div bind:this={container}>
+<div bind:this={container} class="elements observe">
 	<slot {sighted} />
 </div>
 
