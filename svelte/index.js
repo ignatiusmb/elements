@@ -5,6 +5,7 @@ export { default as LazyLoadImage } from './LazyLoadImage.svelte';
 export { default as Link } from './Link.svelte';
 export { default as Modal } from './Modal.svelte';
 export { default as Observe } from './Observe.svelte';
+export { default as Overlay } from './Overlay.svelte';
 export { default as Pagination } from './Pagination.svelte';
 export { default as ProgressBar } from './ProgressBar.svelte';
 export { default as ScrollTop } from './ScrollTop.svelte';
