@@ -1,29 +1,45 @@
 <script>
 	export let src, alt;
+	export let overlay = false;
 	export let absolute = false;
+	export let ratio = 9 / 16;
 
-	let loaded = false;
-	let image;
-
-	import { onMount } from 'svelte';
-	onMount(() => (image.onload = () => (loaded = true)));
+	import { fade } from 'svelte/transition';
+	import Overlay from './Overlay.svelte';
+	let show = false;
 </script>
 
-<img {src} {alt} bind:this={image} class:loaded class:absolute />
+<div
+	class="elements image"
+	class:absolute
+	style="padding-top: {ratio * 100}%"
+	on:mouseenter={() => (show = true)}
+	on:mouseleave={() => (show = false)}>
+	<img {src} {alt} in:fade />
+	{#if overlay}
+		<Overlay {show}>
+			<slot />
+		</Overlay>
+	{/if}
+</div>
 
 <style>
-	img {
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		transition: opacity 1s ease-out;
+	div {
+		position: relative;
+		border-radius: inherit;
 	}
-	img.loaded {
-		opacity: 1;
-	}
-	img.absolute {
+	div.absolute {
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: inherit;
+		object-fit: cover;
 	}
 </style>
