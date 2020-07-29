@@ -162,9 +162,19 @@
 			<line x1="5" y1="12" x2="19" y2="12" />
 		</symbol>
 
+		<symbol id="moon" viewBox="0 00 24 24">
+			<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+		</symbol>
+
 		<symbol id="plus" viewBox="0 00 24 24">
 			<line x1="12" y1="5" x2="12" y2="19" />
 			<line x1="5" y1="12" x2="19" y2="12" />
+		</symbol>
+
+		<symbol id="rss" viewBox="0 00 24 24">
+			<path d="M4 11a9 9 0 0 1 9 9" />
+			<path d="M4 4a16 16 0 0 1 16 16" />
+			<circle cx="5" cy="19" r="1" />
 		</symbol>
 
 		<symbol id="save" viewBox="0 00 24 24">
@@ -185,7 +195,24 @@
 			<line x1="17" y1="16" x2="23" y2="16" />
 		</symbol>
 
+		<symbol id="sun" viewBox="0 00 24 24">
+			<circle cx="12" cy="12" r="5" />
+			<line x1="12" y1="1" x2="12" y2="3" />
+			<line x1="12" y1="21" x2="12" y2="23" />
+			<line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+			<line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+			<line x1="1" y1="12" x2="3" y2="12" />
+			<line x1="21" y1="12" x2="23" y2="12" />
+			<line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+			<line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+		</symbol>
+
 		<symbol id="spotify" viewBox="0 00 24 24" />
+
+		<symbol id="terminal" viewBox="0 00 24 24">
+			<polyline points="4 17 10 11 4 5" />
+			<line x1="12" y1="19" x2="20" y2="19" />
+		</symbol>
 
 		<symbol id="twitch" viewBox="0 00 24 24">
 			<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7" />
@@ -195,6 +222,12 @@
 			<path
 				d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7
 				2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+		</symbol>
+
+		<symbol id="upload" viewBox="0 00 24 24">
+			<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+			<polyline points="17 8 12 3 7 8" />
+			<line x1="12" y1="3" x2="12" y2="15" />
 		</symbol>
 
 		<symbol id="x" viewBox="0 00 24 24">
@@ -208,6 +241,10 @@
 				11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29
 				29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
 			<polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+		</symbol>
+
+		<symbol id="zap" viewBox="0 00 24 24">
+			<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
 		</symbol>
 	</svg>
 </div>
