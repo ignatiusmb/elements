@@ -1,5 +1,11 @@
 # Elements Changelog
 
+## 0.0.5 ([#5](https://github.com/ignatiusmb/elements/pull/5))
+
+- Fix `ThemeSwitcher` fill value
+- Add more icons to `FeatherIcons`
+- Add vertical margin to `WeavedImage`
+
 ## 0.0.4 ([#4](https://github.com/ignatiusmb/elements/pull/4))
 
 - Fix `Image` absolute positioning

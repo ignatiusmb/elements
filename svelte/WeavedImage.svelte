@@ -31,7 +31,7 @@
 		width: 15em;
 		height: 15em;
 		position: relative;
-		margin: 0 auto;
+		margin: 3em auto;
 	}
 	div.weaved-image :global(img) {
 		border: none;
