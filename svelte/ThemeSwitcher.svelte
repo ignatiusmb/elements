@@ -49,7 +49,7 @@
 	}
 	span :global(path) {
 		opacity: 0;
-		fill: rgb(var(--fg-color), currentColor);
+		fill: rgb(var(--fg-color));
 		transition: var(--t-duration, 300ms);
 	}
 	span :global(.selected) {
