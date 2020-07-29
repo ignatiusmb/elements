@@ -1,3 +1,4 @@
+export { default as ButtonLink } from './ButtonLink.svelte';
 export { default as FeatherIcons } from './FeatherIcons.svelte';
 export { default as Icon } from './Icon.svelte';
 export { default as Image } from './Image.svelte';
