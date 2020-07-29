@@ -1,5 +1,13 @@
 # Elements Changelog
 
+## 0.0.4 ([#4](https://github.com/ignatiusmb/elements/pull/4))
+
+- Fix `Image` absolute positioning
+- Add overlay option to `LazyLoadImage`
+- Add `ButtonLink`
+- Add `WeavedImage`
+- Normalize CSS variables and use rgb values
+
 ## 0.0.3 ([#3](https://github.com/ignatiusmb/elements/pull/3))
 
 - Refactor `Image`

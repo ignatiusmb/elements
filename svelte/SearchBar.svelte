@@ -50,8 +50,8 @@
 		grid-template-columns: 1fr auto;
 	}
 	header input {
-		color: var(--fg-color);
-		background-color: var(--bg-color-secondary);
+		color: rgb(var(--fg-color));
+		background-color: rgb(var(--bg-color-secondary));
 	}
 	header span {
 		cursor: pointer;
@@ -59,7 +59,7 @@
 		align-items: center;
 		padding: 0.7em;
 		border-radius: 0.3em;
-		background-color: var(--bg-color-secondary);
+		background-color: rgb(var(--bg-color-secondary));
 	}
 
 	/* FilterGrid */
@@ -91,9 +91,9 @@
 		position: sticky;
 		top: 0;
 		padding: 0.5em 0.25em;
-		border-bottom: 1px solid var(--fg-color);
+		border-bottom: 1px solid rgb(var(--fg-color));
 		margin-bottom: 0.5em;
-		background-color: var(--bg-color);
+		background-color: rgb(var(--bg-color));
 	}
 	aside section label,
 	aside :global(section label) {
@@ -102,11 +102,11 @@
 	}
 	aside section label span,
 	aside :global(section label span) {
-		color: var(--fg-secondary-color);
+		color: rgb(var(--fg-secondary-color));
 	}
 	aside section input:checked + span,
 	aside :global(section input:checked + span) {
-		color: var(--fg-color);
+		color: rgb(var(--fg-color));
 	}
 	aside section input:checked + span::after,
 	aside :global(section input:checked + span::after) {

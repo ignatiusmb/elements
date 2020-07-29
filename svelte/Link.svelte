@@ -13,6 +13,7 @@
 	target={newTab ? '_blank' : '_self'}
 	rel={href.includes('//') ? 'noopener noreferrer' : 'preload'}
 	aria-label={label}
+	class="elements link"
 	class:disabled={!href}
 	class:inherit
 	class:invert>

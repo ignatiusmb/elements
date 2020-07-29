@@ -48,9 +48,9 @@
 		height: 100%;
 	}
 	span :global(path) {
-		fill: var(--fg-color);
 		opacity: 0;
-		transition: opacity var(--transition-duration);
+		fill: rgb(var(--fg-color), currentColor);
+		transition: var(--t-duration, 300ms);
 	}
 	span :global(.selected) {
 		opacity: 1;

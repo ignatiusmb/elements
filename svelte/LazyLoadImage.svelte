@@ -1,5 +1,6 @@
 <script>
 	export let src, alt;
+	export let overlay = false;
 	export let absolute = false;
 
 	import Observe from './Observe.svelte';
@@ -8,6 +9,10 @@
 
 <Observe once let:sighted>
 	{#if sighted}
-		<Image {alt} {src} {absolute} />
+		<Image {alt} {src} {overlay} {absolute}>
+			{#if overlay}
+				<slot />
+			{/if}
+		</Image>
 	{/if}
 </Observe>
