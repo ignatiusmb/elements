@@ -11,7 +11,7 @@
 	{href}
 	{download}
 	target={newTab ? '_blank' : '_self'}
-	rel={href.includes('//') ? 'noopener noreferrer' : 'preload'}
+	rel={href.includes('//') ? 'noopener noreferrer' : 'prefetch'}
 	aria-label={label}
 	class="elements link"
 	class:disabled={!href}
