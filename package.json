@@ -3,9 +3,9 @@
   "author": "Ignatius Bagus",
   "description": "Reusable and functional web components",
   "version": "0.1.0",
-  "main": "svelte/index.mjs",
-  "module": "svelte/index.mjs",
-  "svelte": "svelte/index.mjs",
+  "main": "svelte/index.js",
+  "module": "svelte/index.js",
+  "svelte": "svelte/index.js",
   "keywords": [
     "svelte",
     "reusable",
