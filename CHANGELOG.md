@@ -3,7 +3,7 @@
 ## Unreleased
 
 - Fix `rel` attribute in `Link` for Sapper ([#6](https://github.com/ignatiusmb/elements/pull/6))
-- Add `GradientBorder`
+- Add `GradientBorder` ([#7](https://github.com/ignatiusmb/elements/pull/7))
 
 ## 0.0.5 ([#5](https://github.com/ignatiusmb/elements/pull/5))
 
