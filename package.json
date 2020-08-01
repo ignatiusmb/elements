@@ -4,8 +4,8 @@
   "description": "Reusable and functional web components",
   "version": "0.2.0",
   "type": "module",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "svelte": "index.js",
   "types": "index.d.ts",
   "keywords": [
@@ -27,7 +27,15 @@
     "functional",
     "styled"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.23.0",
+    "rollup-plugin-svelte": "^5.2.3",
+    "svelte": "^3.24.0"
+  }
 }
