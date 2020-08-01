@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## Unreleased
+
+- Include individual files from root folder in published package
+
 ## 0.2.0 ([#10](https://github.com/ignatiusmb/elements/pull/10))
 
 - Revert web components support removal
