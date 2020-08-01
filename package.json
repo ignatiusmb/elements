@@ -25,7 +25,10 @@
   "files": [
     "essentials",
     "functional",
-    "styled"
+    "styled",
+    "index.js",
+    "index.d.ts",
+    "options.js"
   ],
   "scripts": {
     "build": "rollup -c",
