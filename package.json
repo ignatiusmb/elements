@@ -36,6 +36,8 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "rollup": "^2.23.0",
     "rollup-plugin-svelte": "^5.2.3",
-    "svelte": "^3.24.0"
+    "svelte": "^3.24.0",
+    "svelte-preprocess": "^4.0.9",
+    "typescript": "^3.9.7"
   }
 }
