@@ -2,9 +2,9 @@
 	export let query = '';
 	export let filters = null;
 	export let unique = null;
-	import Icon from './Icon.svelte';
+	import Icon from '../essentials/Icon.svelte';
 	import { slide } from 'svelte/transition';
-	import { duration } from './options';
+	import { duration } from '../options';
 	let show = false;
 </script>
 

@@ -1,7 +1,7 @@
 <script>
 	export let show;
 	import { fly } from 'svelte/transition';
-	import { duration } from './options';
+	import { duration } from '../options';
 </script>
 
 {#if show}

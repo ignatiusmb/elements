@@ -3,8 +3,8 @@
 	export let overlay = false;
 	export let absolute = false;
 
-	import Observe from './Observe.svelte';
-	import Image from './Image.svelte';
+	import Observe from '../essentials/Observe.svelte';
+	import Image from '../essentials/Image.svelte';
 </script>
 
 <Observe once let:sighted>

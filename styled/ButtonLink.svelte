@@ -5,7 +5,7 @@
 	export let download = null;
 	export let label = null;
 	export let invert = false;
-	import Link from './Link.svelte';
+	import Link from '../essentials/Link.svelte';
 </script>
 
 <span class="elements button-link" class:disabled>

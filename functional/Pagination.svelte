@@ -1,6 +1,6 @@
 <script>
 	export let store, total, bound;
-	import Icon from './Icon.svelte';
+	import Icon from '../essentials/Icon.svelte';
 	function setPage(index) {
 		if (index < 0) return;
 		index = Math.round(index);

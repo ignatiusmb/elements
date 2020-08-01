@@ -1,7 +1,7 @@
 <script>
 	// ref: https://css-tricks.com/weaving-one-element-over-and-under-another-element/
 	export let src, alt;
-	import Image from './Image.svelte';
+	import Image from '../essentials/Image.svelte';
 </script>
 
 <div class="elements weaved-image">
