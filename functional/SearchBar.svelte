@@ -2,13 +2,13 @@
 	export let query = '';
 	export let filters = null;
 	export let unique = null;
-	import Icon from './Icon.svelte';
+	import Icon from '../essentials/Icon.svelte';
 	import { slide } from 'svelte/transition';
-	import { duration } from './options';
+	import { duration } from '../options';
 	let show = false;
 </script>
 
-<div class="elements search-bar">
+<div class="elements functional search-bar">
 	<header>
 		<input type="text" bind:value={query} placeholder="Type in your search query here" />
 		{#if filters}

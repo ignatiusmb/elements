@@ -18,7 +18,7 @@
 </script>
 
 <span
-	class="elements theme-switcher"
+	class="elements functional theme-switcher"
 	aria-label="Toggle Theme"
 	class:nice
 	on:click={toggle}

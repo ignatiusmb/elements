@@ -1,10 +1,11 @@
 <script>
 	// ref: https://css-tricks.com/weaving-one-element-over-and-under-another-element/
-	export let src, alt;
-	import Image from './Image.svelte';
+	export let src = '';
+	export let alt = '';
+	import Image from '../essentials/Image.svelte';
 </script>
 
-<div class="elements weaved-image">
+<div class="elements styled weaved-image">
 	<Image {src} {alt} absolute />
 	<div class="absolute border" />
 

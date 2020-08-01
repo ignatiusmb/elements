@@ -1,7 +1,10 @@
-<script>
-	export let store, total, bound;
-	import Icon from './Icon.svelte';
-	function setPage(index) {
+<script lang="ts">
+	import type { Writable } from 'svelte/store';
+	export let store: Writable<number>;
+	export let total: number;
+	export let bound: number;
+	import Icon from '../essentials/Icon.svelte';
+	function setPage(index: number) {
 		if (index < 0) return;
 		index = Math.round(index);
 		if (index > $store && curr + bound > total) return;
@@ -12,7 +15,7 @@
 	$: limit = Math.floor(total / bound);
 </script>
 
-<section class="elements pagination">
+<section class="elements functional pagination">
 	<span class:disabled={$store === 0} on:click|preventDefault={() => setPage(0)}>
 		<Icon name="chevrons-left" />
 	</span>

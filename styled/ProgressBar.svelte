@@ -6,7 +6,7 @@
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight />
-<div class="elements progress-bar" style="transform:translateX({progress}%)" />
+<div class="elements styled progress-bar" style="transform:translateX({progress}%)" />
 
 <style>
 	div.elements.progress-bar {

@@ -2,10 +2,12 @@
   "name": "@ignatiusmb/elements",
   "author": "Ignatius Bagus",
   "description": "Reusable and functional web components",
-  "version": "0.1.0",
-  "main": "svelte/index.js",
-  "module": "svelte/index.js",
-  "svelte": "svelte/index.js",
+  "version": "0.2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "svelte",
     "reusable",
@@ -21,9 +23,21 @@
     "url": "https://github.com/ignatiusmb/elements/issues"
   },
   "files": [
-    "svelte"
+    "essentials",
+    "functional",
+    "styled"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.23.0",
+    "rollup-plugin-svelte": "^5.2.3",
+    "svelte": "^3.24.0",
+    "svelte-preprocess": "^4.0.9",
+    "typescript": "^3.9.7"
+  }
 }

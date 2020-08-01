@@ -1,5 +1,5 @@
 <!-- ref: https://codepen.io/alphardex/pen/vYEYGzp -->
-<div class="elements gradient-border">
+<div class="elements styled gradient-border">
 	<slot />
 </div>
 

@@ -1,5 +1,5 @@
-<script>
-	export let src, alt;
+<script lang="ts">
+	export let src: string, alt: string;
 	export let overlay = false;
 	export let absolute = false;
 	export let ratio = 9 / 16;
@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="elements image"
+	class="elements essentials image"
 	class:absolute
 	style="padding-top: {ratio * 100}%"
 	on:mouseenter={() => (show = true)}

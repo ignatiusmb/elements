@@ -1,4 +1,4 @@
-<div>
+<div class="elements styled-loader three-wavy-balls">
 	<span />
 	<span />
 	<span />

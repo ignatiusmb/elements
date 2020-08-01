@@ -1,5 +1,11 @@
 # Elements Changelog
 
+## 0.2.0 ([#10](https://github.com/ignatiusmb/elements/pull/10))
+
+- Revert web components support removal
+- Split elements to `essentials`, `functional`, and `styled`
+- Add type declarations
+
 ## 0.1.0
 
 - Remove web components support ([#9](https://github.com/ignatiusmb/elements/pull/9))
