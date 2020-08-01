@@ -2,10 +2,12 @@
   "name": "@ignatiusmb/elements",
   "author": "Ignatius Bagus",
   "description": "Reusable and functional web components",
-  "version": "0.1.0",
-  "main": "svelte/index.js",
-  "module": "svelte/index.js",
-  "svelte": "svelte/index.js",
+  "version": "0.2.0",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "svelte": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "svelte",
     "reusable",
@@ -21,7 +23,9 @@
     "url": "https://github.com/ignatiusmb/elements/issues"
   },
   "files": [
-    "svelte"
+    "essentials",
+    "functional",
+    "styled"
   ],
   "scripts": {},
   "dependencies": {},
