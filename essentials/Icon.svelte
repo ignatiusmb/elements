@@ -1,5 +1,5 @@
 <script>
-	export let name;
+	export let name = '';
 	export let size = 24;
 	export let weight = 1.5;
 	export let color = 'currentColor';

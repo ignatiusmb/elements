@@ -1,5 +1,6 @@
 <script>
-	export let src, alt;
+	export let src = '';
+	export let alt = '';
 	export let overlay = false;
 	export let absolute = false;
 

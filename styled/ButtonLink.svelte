@@ -8,7 +8,7 @@
 	import Link from '../essentials/Link.svelte';
 </script>
 
-<span class="elements button-link" class:disabled>
+<span class="elements styled button-link" class:disabled>
 	<Link href={!disabled ? href : ''} inherit {newTab} {label} {download} {invert}>
 		<slot />
 	</Link>

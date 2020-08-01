@@ -1,11 +1,11 @@
 <script>
-	export let show;
+	export let show = false;
 	import { fade } from 'svelte/transition';
 	import { duration } from '../options';
 </script>
 
 {#if show}
-	<div class="elements overlay" transition:fade={{ duration }}>
+	<div class="elements essentials overlay" transition:fade={{ duration }}>
 		<slot />
 	</div>
 {/if}

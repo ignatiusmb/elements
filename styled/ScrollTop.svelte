@@ -8,7 +8,7 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<span class="elements scroll-top" class:show on:click={scrollTop}>
+<span class="elements styled scroll-top" class:show on:click={scrollTop}>
 	<Icon name="chevrons-up" />
 </span>
 

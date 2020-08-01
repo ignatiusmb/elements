@@ -8,7 +8,7 @@
 	let show = false;
 </script>
 
-<div class="elements search-bar">
+<div class="elements functional search-bar">
 	<header>
 		<input type="text" bind:value={query} placeholder="Type in your search query here" />
 		{#if filters}
