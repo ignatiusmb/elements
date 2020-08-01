@@ -1,6 +1,6 @@
 # Elements Changelog
 
-## Unreleased
+## 0.2.1 ([#11](https://github.com/ignatiusmb/elements/pull/11))
 
 - Include individual files from root folder in published package
 
