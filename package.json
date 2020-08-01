@@ -2,7 +2,7 @@
   "name": "@ignatiusmb/elements",
   "author": "Ignatius Bagus",
   "description": "Reusable and functional web components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -25,7 +25,10 @@
   "files": [
     "essentials",
     "functional",
-    "styled"
+    "styled",
+    "index.js",
+    "index.d.ts",
+    "options.js"
   ],
   "scripts": {
     "build": "rollup -c",
