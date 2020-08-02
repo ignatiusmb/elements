@@ -1,5 +1,6 @@
-<script lang="ts">
-	export let src: string, alt: string;
+<script>
+	export let src = '';
+	export let alt = '';
 	export let overlay = false;
 	export let absolute = false;
 	export let ratio = 9 / 16;
