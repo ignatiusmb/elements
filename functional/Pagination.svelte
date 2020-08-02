@@ -1,10 +1,10 @@
-<script lang="ts">
-	import type { Writable } from 'svelte/store';
-	export let store: Writable<number>;
-	export let total: number;
-	export let bound: number;
+<script>
+	import { writable } from 'svelte/store';
+	export let store = writable(0);
+	export let total = 0;
+	export let bound = 1;
 	import Icon from '../essentials/Icon.svelte';
-	function setPage(index: number) {
+	function setPage(index) {
 		if (index < 0) return;
 		index = Math.round(index);
 		if (index > $store && curr + bound > total) return;
