@@ -25,6 +25,11 @@
 			<polyline points="20 6 9 17 4 12" />
 		</symbol>
 
+		<symbol id="check-circle" viewBox="0 00 24 24">
+			<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+			<polyline points="22 4 12 14.01 9 11.01" />
+		</symbol>
+
 		<symbol id="chevron-left" viewBox="0 00 24 24">
 			<polyline points="15 18 9 12 15 6" />
 		</symbol>
