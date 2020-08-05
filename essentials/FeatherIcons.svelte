@@ -240,6 +240,12 @@
 			<line x1="12" y1="3" x2="12" y2="15" />
 		</symbol>
 
+		<symbol id="user-check" viewBox="0 00 24 24">
+			<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+			<circle cx="8.5" cy="7" r="4" />
+			<polyline points="17 11 19 13 23 9" />
+		</symbol>
+
 		<symbol id="x" viewBox="0 00 24 24">
 			<line x1="18" y1="6" x2="6" y2="18" />
 			<line x1="6" y1="6" x2="18" y2="18" />
