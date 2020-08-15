@@ -11,9 +11,11 @@
 </script>
 
 <div
+	style="padding-top: {ratio * 100}%"
 	class="elements essentials image"
 	class:absolute
-	style="padding-top: {ratio * 100}%"
+	on:click
+	on:dblclick
 	on:mouseenter={() => (show = true)}
 	on:mouseleave={() => (show = false)}>
 	<img {src} {alt} in:fade />
