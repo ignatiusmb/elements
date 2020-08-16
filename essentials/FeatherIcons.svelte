@@ -1,6 +1,10 @@
 <div style="display: none">
 	<!-- wrapper div allows use of innerHTML -->
 	<svg>
+		<symbol id="activity" viewBox="0 00 24 24">
+			<polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+		</symbol>
+
 		<symbol id="arrow-down" viewBox="0 00 24 24">
 			<line x1="12" y1="5" x2="12" y2="19" />
 			<polyline points="19 12 12 19 5 12" />
@@ -21,8 +25,35 @@
 			<polyline points="5 12 12 5 19 12" />
 		</symbol>
 
+		<symbol id="cast" viewBox="0 00 24 24">
+			<path
+				d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6" />
+			<line x1="2" y1="20" x2="2.01" y2="20" />
+		</symbol>
+
+		<symbol id="camera" viewBox="0 00 24 24">
+			<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+			<circle cx="12" cy="13" r="4" />
+		</symbol>
+
+		<symbol id="camera-off" viewBox="0 00 24 24">
+			<line x1="1" y1="1" x2="23" y2="23" />
+			<path
+				d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56" />
+		</symbol>
+
 		<symbol id="check" viewBox="0 00 24 24">
 			<polyline points="20 6 9 17 4 12" />
+		</symbol>
+
+		<symbol id="check-circle" viewBox="0 00 24 24">
+			<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+			<polyline points="22 4 12 14.01 9 11.01" />
+		</symbol>
+
+		<symbol id="check-square" viewBox="0 00 24 24">
+			<polyline points="9 11 12 14 22 4" />
+			<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
 		</symbol>
 
 		<symbol id="chevron-left" viewBox="0 00 24 24">
@@ -230,6 +261,29 @@
 			<line x1="12" y1="3" x2="12" y2="15" />
 		</symbol>
 
+		<symbol id="upload-cloud" viewBox="0 00 24 24">
+			<polyline points="16 16 12 12 8 16" />
+			<line x1="12" y1="12" x2="12" y2="21" />
+			<path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3" />
+			<polyline points="16 16 12 12 8 16" />
+		</symbol>
+
+		<symbol id="user-check" viewBox="0 00 24 24">
+			<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+			<circle cx="8.5" cy="7" r="4" />
+			<polyline points="17 11 19 13 23 9" />
+		</symbol>
+
+		<symbol id="video" viewBox="0 00 24 24">
+			<polygon points="23 7 16 12 23 17 23 7" />
+			<rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+		</symbol>
+
+		<symbol id="video-off" viewBox="0 00 24 24">
+			<path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10" />
+			<line x1="1" y1="1" x2="23" y2="23" />
+		</symbol>
+
 		<symbol id="x" viewBox="0 00 24 24">
 			<line x1="18" y1="6" x2="6" y2="18" />
 			<line x1="6" y1="6" x2="18" y2="18" />
@@ -245,6 +299,13 @@
 
 		<symbol id="zap" viewBox="0 00 24 24">
 			<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+		</symbol>
+
+		<symbol id="zap-off" viewBox="0 00 24 24">
+			<polyline points="12.41 6.75 13 2 10.57 4.92" />
+			<polyline points="18.57 12.91 21 10 15.66 10" />
+			<polyline points="8 8 3 14 12 14 11 22 16 16" />
+			<line x1="1" y1="1" x2="23" y2="23" />
 		</symbol>
 	</svg>
 </div>
