@@ -1,6 +1,7 @@
 <script>
 	export let src = '';
 	export let alt = '';
+	export let contain = false;
 	export let overlay = false;
 	export let absolute = false;
 	export let ratio = 9 / 16;
@@ -11,12 +12,14 @@
 </script>
 
 <div
+	style="padding-top: {ratio * 100}%"
 	class="elements essentials image"
 	class:absolute
-	style="padding-top: {ratio * 100}%"
+	on:click
+	on:dblclick
 	on:mouseenter={() => (show = true)}
 	on:mouseleave={() => (show = false)}>
-	<img {src} {alt} in:fade />
+	<img {src} {alt} in:fade class:contain />
 	{#if overlay}
 		<Overlay {show}>
 			<slot />
@@ -45,5 +48,8 @@
 		left: 0;
 		border-radius: inherit;
 		text-align: center;
+	}
+	img.contain {
+		object-fit: contain;
 	}
 </style>
