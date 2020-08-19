@@ -1,5 +1,5 @@
 <!-- ref: https://codepen.io/alphardex/pen/vYEYGzp -->
-<div class="elements styled gradient-border">
+<div class="lmns lmns-gradient-border">
 	<slot />
 </div>
 

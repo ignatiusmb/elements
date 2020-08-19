@@ -6,8 +6,8 @@
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "svelte": "index.js",
-  "types": "index.d.ts",
+  "svelte": "src/index.js",
+  "types": "src/index.d.ts",
   "keywords": [
     "svelte",
     "reusable",

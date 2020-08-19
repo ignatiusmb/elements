@@ -13,7 +13,7 @@
 
 <div
 	style="padding-top: {ratio * 100}%"
-	class="elements essentials image"
+	class="lmns lmns-image"
 	class:absolute
 	on:click
 	on:dblclick

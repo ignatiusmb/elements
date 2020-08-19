@@ -36,7 +36,7 @@
 	});
 </script>
 
-<div bind:this={container} class="elements essentials observe">
+<div bind:this={container} class="lmns lmns-observe">
 	<slot {sighted} />
 </div>
 

@@ -1,12 +1,12 @@
 <script>
 	export let show = false;
 	import { fly } from 'svelte/transition';
-	import { duration } from '../options';
+	import { duration } from './options';
 </script>
 
 {#if show}
-	<div class="elements essentials modal-backdrop" on:click|self={() => (show = false)}>
-		<section class="elements essentials modal-content" transition:fly={{ duration }}>
+	<div class="lmns lmns-modal-backdrop" on:click|self={() => (show = false)}>
+		<section class="lmns lmns-modal" transition:fly={{ duration }}>
 			<slot>
 				<code>section.modal-content</code>
 			</slot>

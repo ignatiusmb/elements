@@ -18,7 +18,7 @@
 </script>
 
 <span
-	class="elements functional theme-switcher"
+	class="lmns lmns-theme-switcher"
 	aria-label="Toggle Theme"
 	class:nice
 	on:click={toggle}
