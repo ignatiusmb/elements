@@ -1,9 +1,9 @@
 # Elements Changelog
 
-## Unreleased
+## 0.3.0
 
 - Merge code into src folder and adjust class names ([#15](https://github.com/ignatiusmb/elements/pull/15))
-- Add more to `FeatherIcons` ([#13](https://github.com/ignatiusmb/elements/pull/13))
+- Add more to `FeatherIcons` ([#13](https://github.com/ignatiusmb/elements/pull/13), [#16](https://github.com/ignatiusmb/elements/pull/16))
 - Export `contain` prop and pass click events from `Image` ([#14](https://github.com/ignatiusmb/elements/pull/14))
 
 ## 0.2.2 ([#12](https://github.com/ignatiusmb/elements/pull/12))
