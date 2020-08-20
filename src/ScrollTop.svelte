@@ -1,6 +1,6 @@
 <script>
 	const scrollTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-	import Icon from '../essentials/Icon.svelte';
+	import Icon from './Icon.svelte';
 	import { onMount } from 'svelte';
 	let y, mounted;
 	onMount(() => (mounted = true));
@@ -8,7 +8,7 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<span class="elements styled scroll-top" class:show on:click={scrollTop}>
+<span class="lmns lmns-scroll-top" class:show on:click={scrollTop}>
 	<Icon name="chevrons-up" />
 </span>
 

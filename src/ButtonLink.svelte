@@ -5,10 +5,10 @@
 	export let download = null;
 	export let label = null;
 	export let invert = false;
-	import Link from '../essentials/Link.svelte';
+	import Link from './Link.svelte';
 </script>
 
-<span class="elements styled button-link" class:disabled>
+<span class="lmns lmns-button-link" class:disabled>
 	<Link href={!disabled ? href : ''} inherit {newTab} {label} {download} {invert}>
 		<slot />
 	</Link>

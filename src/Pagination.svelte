@@ -3,7 +3,7 @@
 	export let store = writable(0);
 	export let total = 0;
 	export let bound = 1;
-	import Icon from '../essentials/Icon.svelte';
+	import Icon from './Icon.svelte';
 	function setPage(index) {
 		if (index < 0) return;
 		index = Math.round(index);
@@ -15,7 +15,7 @@
 	$: limit = Math.floor(total / bound);
 </script>
 
-<section class="elements functional pagination">
+<section class="lmns lmns-pagination">
 	<span class:disabled={$store === 0} on:click|preventDefault={() => setPage(0)}>
 		<Icon name="chevrons-left" />
 	</span>

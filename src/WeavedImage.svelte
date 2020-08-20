@@ -2,10 +2,10 @@
 	// ref: https://css-tricks.com/weaving-one-element-over-and-under-another-element/
 	export let src = '';
 	export let alt = '';
-	import Image from '../essentials/Image.svelte';
+	import Image from './Image.svelte';
 </script>
 
-<div class="elements styled weaved-image">
+<div class="lmns lmns-weaved-image">
 	<Image {src} {alt} absolute />
 	<div class="absolute border" />
 
@@ -28,13 +28,13 @@
 </div>
 
 <style>
-	div.weaved-image {
+	div.lmns {
 		width: 15em;
 		height: 15em;
 		position: relative;
 		margin: 3em auto;
 	}
-	div.weaved-image :global(img) {
+	div.lmns :global(img) {
 		border: none;
 		border-radius: 0;
 		box-shadow: 0 0 1em rgba(255, 255, 255, 0.7);
