@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## 0.3.1
+
+- Publish `dist` and `src` folder to bundle
+
 ## 0.3.0
 
 - Merge code into src folder and adjust class names ([#15](https://github.com/ignatiusmb/elements/pull/15))
