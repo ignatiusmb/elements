@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## 0.4.0
+
+- Generate individual feather icon components ([#17](https://github.com/ignatiusmb/elements/pull/17))
+
 ## 0.3.1
 
 - Publish `dist` and `src` folder to bundle
