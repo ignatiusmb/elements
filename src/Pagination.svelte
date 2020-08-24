@@ -3,7 +3,7 @@
 	export let store = writable(0);
 	export let total = 0;
 	export let bound = 1;
-	import Icon from './Icon.svelte';
+	import { ChevronsLeft, ChevronLeft, ChevronsRight, ChevronRight } from './icons';
 	function setPage(index) {
 		if (index < 0) return;
 		index = Math.round(index);
@@ -17,10 +17,10 @@
 
 <section class="lmns lmns-pagination">
 	<span class:disabled={$store === 0} on:click|preventDefault={() => setPage(0)}>
-		<Icon name="chevrons-left" />
+		<ChevronsLeft />
 	</span>
 	<span class:disabled={$store === 0} on:click|preventDefault={() => setPage($store - 1)}>
-		<Icon name="chevron-left" />
+		<ChevronLeft />
 	</span>
 
 	<slot {curr} {next} {limit}>
@@ -28,10 +28,10 @@
 	</slot>
 
 	<span class:disabled={$store === limit} on:click|preventDefault={() => setPage($store + 1)}>
-		<Icon name="chevron-right" />
+		<ChevronsRight />
 	</span>
 	<span class:disabled={$store === limit} on:click|preventDefault={() => setPage(limit)}>
-		<Icon name="chevrons-right" />
+		<ChevronRight />
 	</span>
 </section>
 

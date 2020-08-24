@@ -2,9 +2,9 @@
 	export let query = '';
 	export let filters = null;
 	export let unique = null;
-	import Icon from './Icon.svelte';
 	import { slide } from 'svelte/transition';
 	import { duration } from './options';
+	import { Filter } from './icons';
 	let show = false;
 </script>
 
@@ -13,7 +13,7 @@
 		<input type="text" bind:value={query} placeholder="Type in your search query here" />
 		{#if filters}
 			<span on:click={() => (show = !show)}>
-				<Icon name="filter" />
+				<Filter />
 			</span>
 		{/if}
 	</header>

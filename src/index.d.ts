@@ -1,8 +1,7 @@
+export * as Icons from './icons';
 export * as Loader from './loader';
 
 // essentials
-export { default as FeatherIcons } from './FeatherIcons.svelte';
-export { default as Icon } from './Icon.svelte';
 export { default as Image } from './Image.svelte';
 export { default as Link } from './Link.svelte';
 export { default as Modal } from './Modal.svelte';
