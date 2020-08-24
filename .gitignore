@@ -4,3 +4,6 @@ node_modules
 .DS_Store
 
 /dist/
+
+/src/icons/*
+!/src/icons/build.js
