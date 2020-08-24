@@ -1,5 +1,13 @@
 # Elements Changelog
 
+## 0.4.2
+
+- Hotfix: Fix chevron icons misplacement in `Pagination`
+
+## 0.4.1
+
+- Hotfix: Remove opacity property from `ThemeSwitcher`
+
 ## 0.4.0
 
 - Generate individual feather icon components ([#17](https://github.com/ignatiusmb/elements/pull/17))

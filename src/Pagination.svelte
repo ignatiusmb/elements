@@ -28,10 +28,10 @@
 	</slot>
 
 	<span class:disabled={$store === limit} on:click|preventDefault={() => setPage($store + 1)}>
-		<ChevronsRight />
+		<ChevronRight />
 	</span>
 	<span class:disabled={$store === limit} on:click|preventDefault={() => setPage(limit)}>
-		<ChevronRight />
+		<ChevronsRight />
 	</span>
 </section>
 
