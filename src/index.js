@@ -1,3 +1,4 @@
+export * as Icons from './icons';
 export * as Loader from './loader';
 
 // essentials
