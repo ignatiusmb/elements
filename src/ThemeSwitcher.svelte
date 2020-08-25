@@ -45,12 +45,12 @@
 		cursor: pointer;
 		height: 1.5em;
 	}
-	span :global(svg) {
-		height: 100%;
-	}
-	span :global(path) {
+	span path {
 		fill: rgb(var(--fg-color));
 		transition: var(--t-duration, 300ms);
+	}
+	span > :global(svg) {
+		height: 100%;
 	}
 	.nice {
 		outline: none;
