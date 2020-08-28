@@ -23,7 +23,7 @@
 		text-transform: uppercase;
 		color: rgba(0, 0, 0, 0);
 	}
-	span :global(a) {
+	span > :global(a) {
 		user-select: none;
 		width: 100%;
 		padding: 0.5em 1em;
@@ -35,8 +35,8 @@
 	span:active {
 		color: rgba(var(--theme-secondary), 1);
 	}
-	span:hover :global(a),
-	span:active :global(a) {
+	span:hover > :global(a),
+	span:active > :global(a) {
 		text-shadow: 0 2ch 0 rgba(0, 0, 0, 0);
 		transform: translateY(0);
 	}
