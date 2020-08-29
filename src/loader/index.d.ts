@@ -1,1 +1,3 @@
-export { default as ThreeWavyBalls } from './ThreeWavyBalls.svelte';
+import type { SvelteComponent } from 'svelte';
+
+export class ThreeWavyBalls extends SvelteComponent {}
