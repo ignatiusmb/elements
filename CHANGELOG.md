@@ -1,5 +1,11 @@
 # Elements Changelog
 
+## 0.5.0
+
+- Change `Icons` namespace to `Feather` and optimize `.d.ts` ([#19](https://github.com/ignatiusmb/elements/pull/19))
+- Change global styling to target child rather than descendant ([#18](https://github.com/ignatiusmb/elements/pull/18))
+- Optimize `Loader`'s `.d.ts` file ([#20](https://github.com/ignatiusmb/elements/pull/20))
+
 ## 0.4.2
 
 - Hotfix: Fix chevron icons misplacement in `Pagination`
