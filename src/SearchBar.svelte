@@ -96,20 +96,20 @@
 		background-color: rgb(var(--bg-color));
 	}
 	aside section label,
-	aside :global(section label) {
+	aside > :global(section label) {
 		cursor: pointer;
 		padding: 0.5em 0.25em;
 	}
 	aside section label span,
-	aside :global(section label span) {
+	aside > :global(section label span) {
 		color: rgb(var(--fg-secondary-color));
 	}
 	aside section input:checked + span,
-	aside :global(section input:checked + span) {
+	aside > :global(section input:checked + span) {
 		color: rgb(var(--fg-color));
 	}
 	aside section input:checked + span::after,
-	aside :global(section input:checked + span::after) {
+	aside > :global(section input:checked + span::after) {
 		content: '✔';
 		margin-left: 0.5em;
 	}
