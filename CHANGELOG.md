@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## Unreleased
+
+- Fix `SearchBar` spacing when filter is not used ([#21](https://github.com/ignatiusmb/elements/pull/21))
+
 ## 0.5.0
 
 - Change `Icons` namespace to `Feather` and optimize `.d.ts` ([#19](https://github.com/ignatiusmb/elements/pull/19))
