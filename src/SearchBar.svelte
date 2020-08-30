@@ -9,7 +9,7 @@
 </script>
 
 <div class="lmns lmns-search-bar">
-	<header>
+	<header class:filters>
 		<input type="text" bind:value={query} placeholder="Type in your search query here" />
 		{#if filters}
 			<span on:click={() => (show = !show)}>
@@ -47,6 +47,9 @@
 	header {
 		display: grid;
 		gap: 0.5em;
+		grid-template-columns: 1fr;
+	}
+	header.filters {
 		grid-template-columns: 1fr auto;
 	}
 	header input {
