@@ -3,8 +3,8 @@
 	export let filters = null;
 	export let unique = null;
 	import { slide } from 'svelte/transition';
-	import { duration } from './options';
 	import { Filter } from './icons';
+	import { duration } from './options';
 	let show = false;
 </script>
 
