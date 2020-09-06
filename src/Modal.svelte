@@ -29,7 +29,7 @@
 	}
 	section {
 		padding: 2em;
-		border-radius: 0.5em;
-		background: #fff;
+		border-radius: var(--b-radius, 0.5em);
+		background: var(--bg-overlay, #ffffff);
 	}
 </style>
