@@ -7,9 +7,7 @@
 {#if show}
 	<div class="lmns lmns-modal-backdrop" on:click|self={() => (show = false)}>
 		<section class="lmns lmns-modal" transition:fly={{ duration }}>
-			<slot>
-				<code>section.modal-content</code>
-			</slot>
+			<slot />
 		</section>
 	</div>
 {/if}
