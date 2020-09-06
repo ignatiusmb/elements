@@ -18,10 +18,10 @@
 </script>
 
 <section class="lmns lmns-pagination">
-	<span class:disabled={$store === 0} on:click|preventDefault={() => update(0)}>
+	<span class:disabled={$store === 0} on:click={() => update(0)}>
 		<ChevronsLeft />
 	</span>
-	<span class:disabled={$store === 0} on:click|preventDefault={() => update($store - 1)}>
+	<span class:disabled={$store === 0} on:click={() => update($store - 1)}>
 		<ChevronLeft />
 	</span>
 
@@ -29,10 +29,10 @@
 		<div>{curr} - {next} / {total}</div>
 	</slot>
 
-	<span class:disabled={$store === limit} on:click|preventDefault={() => update($store + 1)}>
+	<span class:disabled={$store === limit} on:click={() => update($store + 1)}>
 		<ChevronRight />
 	</span>
-	<span class:disabled={$store === limit} on:click|preventDefault={() => update(limit)}>
+	<span class:disabled={$store === limit} on:click={() => update(limit)}>
 		<ChevronsRight />
 	</span>
 </section>
