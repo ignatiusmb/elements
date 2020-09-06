@@ -51,8 +51,8 @@
 	}
 	header input,
 	header span {
-		color: var(--fg-surface);
-		background-color: var(--bg-overlay);
+		color: var(--fg-surface, rgba(255, 255, 255, 0.65));
+		background-color: var(--bg-overlay, #2d2f34);
 	}
 	header span {
 		cursor: pointer;
@@ -91,9 +91,9 @@
 		position: sticky;
 		top: 0;
 		padding: 0.5em 0.25em;
-		border-bottom: 1px solid var(--fg-surface);
+		border-bottom: 1px solid var(--fg-surface, rgba(255, 255, 255, 0.65));
 		margin-bottom: 0.5em;
-		background-color: var(--bg-surface);
+		background-color: var(--bg-surface, #27292d);
 	}
 	aside section label,
 	aside > :global(section label) {
@@ -102,11 +102,11 @@
 	}
 	aside section label span,
 	aside > :global(section label span) {
-		color: var(--fg-overlay);
+		color: var(--fg-overlay, rgba(255, 255, 255, 0.3));
 	}
 	aside section input:checked + span,
 	aside > :global(section input:checked + span) {
-		color: var(--fg-surface);
+		color: var(--fg-surface, rgba(255, 255, 255, 0.65));
 	}
 	aside section input:checked + span::after,
 	aside > :global(section input:checked + span::after) {
