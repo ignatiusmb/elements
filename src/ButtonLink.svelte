@@ -19,7 +19,7 @@
 		overflow-y: hidden;
 		display: inline-flex;
 		border-radius: inherit;
-		background-color: rgba(var(--bg-color), 1);
+		background-color: var(--bg-overlay, #2d2f34);
 		text-transform: uppercase;
 		color: rgba(0, 0, 0, 0);
 	}
@@ -27,13 +27,13 @@
 		user-select: none;
 		width: 100%;
 		padding: 0.5em 1em;
-		text-shadow: 0 2ch 0 rgba(var(--fg-color), 1);
+		text-shadow: 0 2ch 0 var(--fg-surface, rgba(255, 255, 255, 0.65));
 		transform: translateY(-2ch);
 		transition: all var(--t-duration) ease-in-out;
 	}
 	span:hover,
 	span:active {
-		color: rgba(var(--theme-secondary), 1);
+		color: var(--theme-secondary, #dc143c);
 	}
 	span:hover > :global(a),
 	span:active > :global(a) {

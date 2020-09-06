@@ -26,7 +26,7 @@
 		justify-content: center;
 		border-radius: 50%;
 		font-size: 1.5em;
-		color: rgb(var(--theme-primary, (153, 0, 0)));
+		color: var(--theme-primary, #990000);
 		background-color: rgba(0, 0, 0, 0.25);
 		transform: translate(-50%, 100%);
 		transition: transform var(--t-duration, 300ms);
