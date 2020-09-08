@@ -46,7 +46,6 @@
 		height: 1.5em;
 	}
 	span path {
-		fill: rgb(var(--fg-color));
 		transition: var(--t-duration, 300ms);
 	}
 	span > :global(svg) {

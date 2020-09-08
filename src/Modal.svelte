@@ -7,21 +7,21 @@
 {#if show}
 	<div class="lmns lmns-modal-backdrop" on:click|self={() => (show = false)}>
 		<section class="lmns lmns-modal" transition:fly={{ duration }}>
-			<slot>
-				<code>section.modal-content</code>
-			</slot>
+			<slot />
 		</section>
 	</div>
 {/if}
 
 <style>
 	div {
-		z-index: 3;
+		z-index: 6;
 		width: 100%;
 		height: 100%;
+
+		position: fixed;
 		top: 0;
 		left: 0;
-		position: fixed;
+
 		display: grid;
 		align-items: center;
 		justify-content: center;
@@ -29,7 +29,7 @@
 	}
 	section {
 		padding: 2em;
-		border-radius: 0.5em;
-		background: #fff;
+		border-radius: var(--b-radius, 0.5em);
+		background: var(--bg-overlay, #ffffff);
 	}
 </style>

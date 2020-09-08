@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add proper fallback values for CSS vars ([#22](https://github.com/ignatiusmb/elements/pull/22))
 - Fix `SearchBar` spacing when filter is not used ([#21](https://github.com/ignatiusmb/elements/pull/21))
 
 ## 0.5.0
