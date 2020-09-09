@@ -24,10 +24,7 @@
 				<section>
 					<h3>{key}</h3>
 					{#each unique[key] as value}
-						<label>
-							<input type="checkbox" bind:group={filters[key]} {value} />
-							<span>{value}</span>
-						</label>
+						<label><input type="checkbox" bind:group={filters[key]} {value} /><span>{value}</span></label>
 					{/each}
 				</section>
 			{/each}
@@ -52,9 +49,10 @@
 	header.filters {
 		grid-template-columns: 1fr auto;
 	}
-	header input {
-		color: rgb(var(--fg-color));
-		background-color: rgb(var(--bg-color-secondary));
+	header input,
+	header span {
+		color: var(--fg-surface, rgba(255, 255, 255, 0.65));
+		background-color: var(--bg-overlay, #2d2f34);
 	}
 	header span {
 		cursor: pointer;
@@ -62,7 +60,6 @@
 		align-items: center;
 		padding: 0.7em;
 		border-radius: 0.3em;
-		background-color: rgb(var(--bg-color-secondary));
 	}
 
 	/* FilterGrid */
@@ -94,9 +91,9 @@
 		position: sticky;
 		top: 0;
 		padding: 0.5em 0.25em;
-		border-bottom: 1px solid rgb(var(--fg-color));
+		border-bottom: 1px solid var(--fg-surface, rgba(255, 255, 255, 0.65));
 		margin-bottom: 0.5em;
-		background-color: rgb(var(--bg-color));
+		background-color: var(--bg-surface, #27292d);
 	}
 	aside section label,
 	aside > :global(section label) {
@@ -105,11 +102,11 @@
 	}
 	aside section label span,
 	aside > :global(section label span) {
-		color: rgb(var(--fg-secondary-color));
+		color: var(--fg-overlay, rgba(255, 255, 255, 0.3));
 	}
 	aside section input:checked + span,
 	aside > :global(section input:checked + span) {
-		color: rgb(var(--fg-color));
+		color: var(--fg-surface, rgba(255, 255, 255, 0.65));
 	}
 	aside section input:checked + span::after,
 	aside > :global(section input:checked + span::after) {

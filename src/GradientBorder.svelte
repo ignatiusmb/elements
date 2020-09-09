@@ -10,8 +10,8 @@
 		position: relative;
 		padding: var(--border-width);
 		border-radius: var(--border-width);
-		background: rgb(var(--bg-color));
-		color: rgb(var(--fg-color));
+		background: var(--bg-surface, #2d2f34);
+		color: var(--fg-surface, rgba(255, 255, 255, 0.65));
 	}
 	div::after {
 		content: '';
