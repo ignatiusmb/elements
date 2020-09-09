@@ -101,11 +101,12 @@ There's currently only one loader available to use, which is `ThreeWavyBalls`. M
 
 | Essentials | Functional      | Styled           |
 | ---------- | --------------- | ---------------- |
-| `Image`    | `LazyLoadImage` | `ButtonLink`     |
-| `Link`     | `Pagination`    | `GradientBorder` |
-| `Modal`    | `SearchBar`     | `ProgressBar`    |
-| `Observer` | `ThemeSwitcher` | `ScrollTop`      |
-| `Overlay`  |                 | `WeavedImage`    |
+| `Dialog`   | `LazyLoadImage` | `ButtonLink`     |
+| `Image`    | `Pagination`    | `GradientBorder` |
+| `Link`     | `SearchBar`     | `ProgressBar`    |
+| `Modal`    | `ThemeSwitcher` | `ScrollTop`      |
+| `Observer` |                 | `WeavedImage`    |
+| `Overlay`  |                 |                  |
 
 ***
 
