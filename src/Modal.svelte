@@ -5,7 +5,7 @@
 </script>
 
 {#if show}
-	<div class="lmns lmns-modal-backdrop" on:click|self={() => (show = false)}>
+	<div class="lmns lmns-modal-backdrop">
 		<section class="lmns lmns-modal" transition:fly={{ duration }}>
 			<slot />
 		</section>
