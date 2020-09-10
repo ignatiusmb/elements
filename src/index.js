@@ -2,6 +2,7 @@ export * as Feather from './icons';
 export * as Loader from './loader';
 
 // essentials
+export { default as Dialog } from './Dialog.svelte';
 export { default as Image } from './Image.svelte';
 export { default as Link } from './Link.svelte';
 export { default as Modal } from './Modal.svelte';
