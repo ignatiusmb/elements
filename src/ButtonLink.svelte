@@ -19,7 +19,7 @@
 		overflow-y: hidden;
 		display: inline-flex;
 		border-radius: inherit;
-		background-color: var(--bg-overlay, #2d2f34);
+		background-color: var(--bg-base, #1f2023);
 		text-transform: uppercase;
 		color: rgba(0, 0, 0, 0);
 	}
