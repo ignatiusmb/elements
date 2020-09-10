@@ -1,6 +1,6 @@
 # Elements Changelog
 
-## Unreleased
+## 0.6.0
 
 - Fix `Pagination` indexing ([#24](https://github.com/ignatiusmb/elements/pull/24))
 - Fix `Modal` functionality and add `Dialog` ([#23](https://github.com/ignatiusmb/elements/pull/23))
