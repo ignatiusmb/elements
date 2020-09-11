@@ -2,7 +2,8 @@
 
 ## Unreleased
 
-- Change CSS vars and fallbacks for `ButtonLink` and `SearchBar`
+- Export existing props from `Image` to `LazyLoadImage` ([#26](https://github.com/ignatiusmb/elements/pull/26))
+- Change CSS vars and fallbacks for `ButtonLink` and `SearchBar` ([#25](https://github.com/ignatiusmb/elements/pull/25))
 
 ## 0.6.0
 
