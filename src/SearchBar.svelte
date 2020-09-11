@@ -93,7 +93,7 @@
 		padding: 0.5em 0.25em;
 		border-bottom: 1px solid var(--fg-surface, rgba(255, 255, 255, 0.65));
 		margin-bottom: 0.5em;
-		background-color: var(--bg-surface, #27292d);
+		background-color: var(--bg-base, #1f2023);
 	}
 	aside section label,
 	aside > :global(section label) {

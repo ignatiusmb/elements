@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## Unreleased
+
+- Change CSS vars and fallbacks for `ButtonLink` and `SearchBar`
+
 ## 0.6.0
 
 - Fix `Pagination` indexing ([#24](https://github.com/ignatiusmb/elements/pull/24))
