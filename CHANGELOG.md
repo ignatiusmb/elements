@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Add keydown listener on `SearchBar` to focus on searchbox ([#28](https://github.com/ignatiusmb/elements/pull/28))
 - Update `Pagination` element ([#27](https://github.com/ignatiusmb/elements/pull/27))
   - Add new exported prop `increment` to specify items per update
   - Add new exported prop `tween` to iterate over items instead of jumping to it
