@@ -116,8 +116,6 @@ There's currently only one loader available to use, which is `ThreeWavyBalls`. M
 
 Dialog element backdrop can be clicked by the user to close the interface, its almost exactly the same as [`Modal`](#modal) with some minor difference in functionality, see [this question on Quora](https://www.quora.com/Whats-the-difference-between-a-modal-and-dialog) for more details on why.
 
-- `show` -
-
 ```svelte
 <script>
   import { Dialog } from '@ignatiusmb/elements';
@@ -161,8 +159,8 @@ Image element is created to have a fixed ratio, **not size**. It will be respons
 ```svelte
 <script>
   import { Image } from '@ignatiusmb/elements';
-  const src = "//example.com/image.png";
-  const alt = "An example text for this element";
+  const src = '//example.com/image.png';
+  const alt = 'An example text for this element';
 </script>
 
 <Image {src} {alt} contain />
@@ -173,8 +171,8 @@ Image element is created to have a fixed ratio, **not size**. It will be respons
 ```svelte
 <script>
   import { Image } from '@ignatiusmb/elements';
-  const src = "//example.com/image.png";
-  const alt = "An example text for this element";
+  const src = '//example.com/image.png';
+  const alt = 'An example text for this element';
 </script>
 
 <Image {src} {alt} overlay>
@@ -187,8 +185,8 @@ Image element is created to have a fixed ratio, **not size**. It will be respons
 ```svelte
 <script>
   import { Image } from '@ignatiusmb/elements';
-  const src = "//example.com/image.png";
-  const alt = "An example text for this element";
+  const src = '//example.com/image.png';
+  const alt = 'An example text for this element';
 </script>
 
 <div style="position: relative">
@@ -202,8 +200,8 @@ Image element is created to have a fixed ratio, **not size**. It will be respons
 ```svelte
 <script>
   import { Image } from '@ignatiusmb/elements';
-  const src = "//example.com/image.png";
-  const alt = "An example text for this element";
+  const src = '//example.com/image.png';
+  const alt = 'An example text for this element';
 </script>
 
 <!-- Square Image -->
