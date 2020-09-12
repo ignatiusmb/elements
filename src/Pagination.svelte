@@ -11,6 +11,7 @@
 	}
 	$: ceil = Math.ceil((total - bound) / increment);
 	$: limit = ceil < 0 ? 0 : ceil;
+	$: $store = $store > limit ? limit : $store;
 
 	$: curr = total ? $store * increment + 1 : 0;
 	$: comp = curr - 1 + bound;
