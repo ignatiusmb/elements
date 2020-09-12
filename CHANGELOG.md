@@ -4,6 +4,7 @@
 
 - Update `Pagination` element ([#27](https://github.com/ignatiusmb/elements/pull/27))
   - Add new exported prop `increment` to specify items per update
+  - Add new exported prop `tween` to iterate over items instead of jumping to it
   - Fix `limit` going negative value and right Chevrons disabled class gets removed
   - Fix `total` value 0 but `curr` is still incremented by one
   - Fix `total` value changed but `$store` isn't readjusted
