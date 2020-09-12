@@ -29,7 +29,7 @@
 		padding: 0.5em 1em;
 		text-shadow: 0 2ch 0 var(--fg-surface, rgba(255, 255, 255, 0.65));
 		transform: translateY(-2ch);
-		transition: all var(--t-duration) ease-in-out;
+		transition: all var(--t-duration, 300ms) ease-in-out;
 	}
 	span:hover,
 	span:active {
