@@ -9,10 +9,12 @@
 		if (index < 0 || index > limit) return;
 		$store = index;
 	}
+	$: ceil = Math.ceil((total - bound) / increment);
+	$: limit = ceil < 0 ? 0 : ceil;
+
 	$: curr = $store * increment + 1;
 	$: comp = curr - 1 + bound;
 	$: next = comp <= total ? comp : total;
-	$: limit = Math.ceil((total - bound) / increment);
 </script>
 
 <section class="lmns lmns-pagination">
