@@ -3,18 +3,16 @@
 	export let store = writable(0);
 	export let total = 0;
 	export let bound = 1;
+	export let increment = bound;
 	import { ChevronsLeft, ChevronLeft, ChevronsRight, ChevronRight } from './icons';
 	function update(index) {
-		if (index < 0) return;
-		index = Math.round(index);
-		if (index < $store) $store = index;
-		else if (comp > total) return;
+		if (index < 0 || index > limit) return;
 		$store = index;
 	}
-	$: curr = $store * bound + 1;
+	$: curr = $store * increment + 1;
 	$: comp = curr - 1 + bound;
 	$: next = comp <= total ? comp : total;
-	$: limit = Math.floor(total / bound);
+	$: limit = Math.ceil((total - bound) / increment);
 </script>
 
 <section class="lmns lmns-pagination">
