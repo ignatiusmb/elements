@@ -1,8 +1,10 @@
 # Elements ![Total npm downloads](https://img.shields.io/npm/dt/@ignatiusmb/elements) &middot; ![Published npm version](https://img.shields.io/npm/v/@ignatiusmb/elements) ![Monthly npm downloads](https://img.shields.io/npm/dm/@ignatiusmb/elements) ![License](https://img.shields.io/github/license/ignatiusmb/elements) [![Made with Svelte](https://img.shields.io/badge/made%20with-Svelte-ff3e00)](https://svelte.dev/)
 
-> A collection of hassle-free and ready-to-use components made with Svelte. [Feather](https://feathericons.com/) icons included.
+> A collection of hassle-free and ready-to-use functional components made with Svelte. [Feather](https://feathericons.com/) icons included.
 
-Elements is a Svelte component library consisting of various essential, functional, and pre-styled components. Created with DRY principle in mind as well as utilizing Svelte being a compiler, components like `Link`, `Image`, `Dialog` or `Modal` can be created once in here and used in any project without having to copy the `.svelte` file or rewrite them in each repository.
+Elements is a Svelte component library consisting of various essential, functional, and pre-styled components. Created with DRY principle in mind as well as utilizing Svelte being a compiler.
+
+Elements is not a(nother) UI library / components library adhering to specific design language or certain guidelines. Though Elements has some generic components, the focus is mostly on its functionality. There's already a ton of UI libraries with various buttons, cards, menus, and other components in one complete package if you're looking for that kind of stuff.
 
 Originally made with ease of use in mind for personal projects only, turned into something potentially bigger and useful to other projects as well. As it grew bigger and more components being added, I realize this might also be beneficial to others as well, in hopes that this would help fellow Svelte developers in quickstarting new projects as well.
 
@@ -48,7 +50,9 @@ Import only the components you need, play around in the [REPL](https://svelte.de
 
 Please keep in mind that this is basically still a hobby project I'm doing to help myself in other projects. Elements will try to be as design agnostic as possible except for styled components, which would be whatever I thought was good at the time of making it. Elements does not adhere to any existing design language, any resemblance to certain design language is either inspired by or just purely coincidental. In other words, please do not expect a lot design-wise.
 
-I like to create my own components as pure as possible, meaning I would try my best to create it in pure HTML, vanilla JS, or in this case Svelte-flavored, before using third-party libraries. In which case, it wouldn't be a component here. Also, working with Sapper and already having a ton of devDependencies, installing more `svelte-*` packages e.g. `svelte-search-bar`, `svelte-pagination`, `svelte-theme-switcher`, and so on would make it harder to manage and quite the chore to keep up with each updates. Hence, why I try to (re)create the components and bundle it as one collection here.
+I personally never used a CSS framework or library and will not try to make one either, especially with Svelte where there's only a workaround, or escape hatch as they call it, using the `:global()` modifier. Either way, isn't it more fun to style your own website rather than using a pre-made UI component library? It would also make your website unique and better.
+
+Working with Sapper and already having a ton of devDependencies, installing `svelte-*` packages e.g. `svelte-search-bar`, `svelte-pagination`, `svelte-theme-switcher`, and so on feels like it would make it harder to manage and quite the chore to keep up with each updates. I also like to create my own components as pure as possible, and I find myself reusing the same components across multiple projects. Hence, why I try to (re)create most components myself and bundle it as one collection here in Elements, Svelte-flavoured.
 
 If some components you think are essential is missing and you feel it should be here, please understand that it was specifically excluded to spite you personally. All jokes aside, contributions are welcome as always!
 
