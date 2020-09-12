@@ -5,7 +5,8 @@
 - Update `Pagination` element ([#26](https://github.com/ignatiusmb/elements/pull/26))
   - Add new exported prop `increment` to specify items per update
   - Fix `limit` going negative value and right Chevrons disabled class gets removed
-  - Fix `curr` value not adjusted when `total` is 0
+  - Fix `total` value 0 but `curr` is still incremented by one
+  - Fix `total` value changed but `$store` isn't readjusted
 - Export existing props from `Image` to `LazyLoadImage` ([#26](https://github.com/ignatiusmb/elements/pull/26))
 - Change CSS vars and fallbacks for `ButtonLink` and `SearchBar` ([#25](https://github.com/ignatiusmb/elements/pull/25))
 
