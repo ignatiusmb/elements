@@ -1,6 +1,6 @@
 # Elements Changelog
 
-## Unreleased
+## 0.6.1
 
 - Add keydown listener on `SearchBar` to focus on searchbox ([#28](https://github.com/ignatiusmb/elements/pull/28))
 - Update `Pagination` element ([#27](https://github.com/ignatiusmb/elements/pull/27))
