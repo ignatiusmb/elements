@@ -2,7 +2,7 @@
 
 > A collection of hassle-free and ready-to-use functional components made with Svelte. [Feather](https://feathericons.com/) icons included.
 
-Elements is a Svelte component library consisting of various essential, functional, and pre-styled components. Created with DRY principle in mind as well as utilizing Svelte being a compiler.
+Elements is a Svelte component library consisting of various essential, mostly functional, and some pre-styled components. Create your own or use pre-existing, uniquely styled components and still get all the benefits from Elements. By utilizing [Svelte `<slot>`](https://svelte.dev/docs#slot), we're able to integrate our components while still getting the benefits of scoped styles and not having to worry about global styling modifiers or how to integrate components.
 
 Elements is not a(nother) UI library / components library adhering to specific design language or certain guidelines. Though Elements has some generic components, the focus is mostly on its functionality. There's already a ton of UI libraries with various buttons, cards, menus, and other components in one complete package if you're looking for that kind of stuff.
 
@@ -147,14 +147,14 @@ Dialog element backdrop can be clicked by the user to close the interface, its a
 
 ### Image
 
-| Props      | Default  |
-| ---------- | -------- |
-| src **\*** | `''`     |
-| alt *      | `''`     |
-| contain    | `false`  |
-| overlay    | `false`  |
-| absolute   | `false`  |
-| ratio      | `9 / 16` |
+| Props    | Default  |
+| -------- | -------- |
+| src *    | `''`     |
+| alt *    | `''`     |
+| contain  | `false`  |
+| overlay  | `false`  |
+| absolute | `false`  |
+| ratio    | `9 / 16` |
 
 Image element is created to have a fixed ratio, **not size**. It will be responsive by default and will follow its parent container size. To set a fixed size, just explicitly set the parent container size.
 
@@ -216,6 +216,49 @@ Image element is created to have a fixed ratio, **not size**. It will be respons
 
 <!-- Horizontal format -->
 <Image {src} {alt} ratio={3 / 4} />
+```
+
+### Pagination
+
+| Props     | Default       |
+| --------- | ------------- |
+| store *   | `writable(0)` |
+| total *   | `0`           |
+| bound     | `1`           |
+| increment | `bound`       |
+| tween     | `false`       |
+
+Pagination element handles all the complicated and unnecessary stuff for us, including all the edge cases. We just need to pass in the necessary props and handle the actual items slicing ourself.
+
+- `store` - a Svelte store to manage the state of the current paginated index.
+- `total` - usually just the `.length` of your data array
+- `bound` - maximum number of items per page
+- `increment` - number of items to skip every next/prev page
+- `tween` - boolean value to use tween increments rather than jump
+
+```svelte
+<script>
+  export let items = []; // Your data array
+  import { Pagination } from '@ignatiusmb/elements';
+  import { posts as store } from './stores.js';
+  const bound = 3;
+  const increment = 1;
+
+  $: count = $store * increment;
+  $: filtered = items.slice(count, count + bound);
+  $: total = filtered.length;
+</script>
+
+<Pagination {store} {total} {bound} {increment} tween />
+
+{#each filtered as post}
+  <div>
+    <h2>{post.title}</h2>
+    <p>{post.description}</p>
+  </div>
+{:else}
+  <h2>No posts available</h2>
+{/each}
 ```
 
 ***
