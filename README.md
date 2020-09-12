@@ -108,6 +108,114 @@ There's currently only one loader available to use, which is `ThreeWavyBalls`. M
 | `Observer` |                 | `WeavedImage`    |
 | `Overlay`  |                 |                  |
 
+### Dialog
+
+| Props | Default |
+| ----- | ------- |
+| show  | `false` |
+
+Dialog element backdrop can be clicked by the user to close the interface, its almost exactly the same as [`Modal`](#modal) with some minor difference in functionality, see [this question on Quora](https://www.quora.com/Whats-the-difference-between-a-modal-and-dialog) for more details on why.
+
+- `show` -
+
+```svelte
+<script>
+  import { Dialog } from '@ignatiusmb/elements';
+</script>
+
+<Dialog show>
+  <!-- Immediately shows the Dialog -->
+</Dialog>
+```
+
+```svelte
+<script>
+  import { Dialog } from '@ignatiusmb/elements';
+  let show = false;
+</script>
+
+<button on:click={() => (show = true)}>Show</button>
+
+<!-- Use "bind:" so "show" variable here will be updated too -->
+<Dialog bind:show>
+  <!-- Optional: Explicitly have button to close "Dialog" inside -->
+  <button on:click={() => (show = false)}>Close</button>
+</Dialog>
+```
+
+### Image
+
+| Props      | Default  |
+| ---------- | -------- |
+| src **\*** | `''`     |
+| alt *      | `''`     |
+| contain    | `false`  |
+| overlay    | `false`  |
+| absolute   | `false`  |
+| ratio      | `9 / 16` |
+
+Image element is created to have a fixed ratio, **not size**. It will be responsive by default and will follow its parent container size. To set a fixed size, just explicitly set the parent container size.
+
+- `contain` - images will have property `object-fit` with the value of `cover` by default, pass this prop to set the value to `contain`
+
+```svelte
+<script>
+  import { Image } from '@ignatiusmb/elements';
+  const src = "//example.com/image.png";
+  const alt = "An example text for this element";
+</script>
+
+<Image {src} {alt} contain />
+```
+
+- `overlay` - Overlay element is provided and available to use if you need it, you can pass in other components when this prop is used
+
+```svelte
+<script>
+  import { Image } from '@ignatiusmb/elements';
+  const src = "//example.com/image.png";
+  const alt = "An example text for this element";
+</script>
+
+<Image {src} {alt} overlay>
+  <p>I will appear when this Image is hovered</p>
+</Image>
+```
+
+- `absolute` - set the Image container position as absolute
+
+```svelte
+<script>
+  import { Image } from '@ignatiusmb/elements';
+  const src = "//example.com/image.png";
+  const alt = "An example text for this element";
+</script>
+
+<div style="position: relative">
+  <!-- Image is now absolute positioned in this div -->
+  <Image {src} {alt} absolute />
+</div>
+```
+
+- `ratio` - this receives a float to determine the ratio of your image, set to 16:9 by default
+
+```svelte
+<script>
+  import { Image } from '@ignatiusmb/elements';
+  const src = "//example.com/image.png";
+  const alt = "An example text for this element";
+</script>
+
+<!-- Square Image -->
+<Image {src} {alt} ratio={1} />
+
+<!-- Vertical format -->
+<Image {src} {alt} ratio={4 / 3} />
+
+<!-- Horizontal format -->
+<Image {src} {alt} ratio={3 / 4} />
+```
+
 ***
 
 <h3 align="center"><pre>
