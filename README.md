@@ -230,7 +230,7 @@ Image element is created to have a fixed ratio, **not size**. It will be respons
 
 Pagination element handles all the complicated and unnecessary stuff for us, including all the edge cases. We just need to pass in the necessary props and handle the actual items slicing ourself.
 
-- `store` - a Svelte store to manage the state of the current paginated index.
+- `store` - a Svelte store to manage the state of the current paginated index
 - `total` - usually just the `.length` of your data array
 - `bound` - maximum number of items per page
 - `increment` - number of items to skip every next/prev page
@@ -259,6 +259,48 @@ Pagination element handles all the complicated and unnecessary stuff for us, inc
 {:else}
   <h2>No posts available</h2>
 {/each}
+```
+
+### SearchBar
+
+| Props   | Default |
+| ------- | ------- |
+| query * | `''`    |
+| filters | `null`  |
+| unique  | `null`  |
+
+SearchBar element provides a searchbox and `query` to bind the value.
+
+- `query` - prop that holds the query value from the searchbox
+- `filters` - object with arrays that holds filters checked by user
+- `unique` - object with arrays consisting of unique values complementing filters
+
+```svelte
+<script>
+  // Filtered object of arrays with unique values
+  export let unique = { categories: [], tags: [] };
+  import { SearchBar } from '@ignatiusmb/elements';
+  let filters = { categories: [], tags: [], sort: 'updated' };
+  let query;
+</script>
+
+<!-- Only searchbox -->
+<SearchBar bind:query />
+
+<!-- With filters -->
+<SearchBar bind:query bind:filters {unique}>
+  <section>
+    <h3>Sort by</h3>
+    <label>
+      <input type="radio" bind:group={filters.sort} value="updated" />
+      <span>Last updated</span>
+    </label>
+    <label>
+      <input type="radio" bind:group={filters.sort} value="published" />
+      <span>Date published</span>
+    </label>
+  </section>
+</SearchBar>
 ```
 
 ***
