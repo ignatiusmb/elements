@@ -12,7 +12,7 @@
 	$: ceil = Math.ceil((total - bound) / increment);
 	$: limit = ceil < 0 ? 0 : ceil;
 
-	$: curr = $store * increment + 1;
+	$: curr = total ? $store * increment + 1 : 0;
 	$: comp = curr - 1 + bound;
 	$: next = comp <= total ? comp : total;
 </script>
