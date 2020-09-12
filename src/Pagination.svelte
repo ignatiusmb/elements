@@ -48,6 +48,8 @@
 	}
 	span {
 		cursor: pointer;
+		display: inline-flex;
+		justify-content: center;
 	}
 	span.disabled {
 		cursor: not-allowed;
