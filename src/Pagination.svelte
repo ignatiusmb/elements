@@ -4,10 +4,19 @@
 	export let total = 0;
 	export let bound = 1;
 	export let increment = bound;
+	export let tween = false;
 	import { ChevronsLeft, ChevronLeft, ChevronsRight, ChevronRight } from './icons';
 	function update(index) {
 		if (index < 0 || index > limit) return;
-		$store = index;
+		if (tween && (index === 0 || index === limit)) {
+			let timeout = null;
+			const repeat = () => {
+				$store = index === 0 ? $store - 1 : $store + 1;
+				if ($store === 0 || $store === limit) clearTimeout(timeout);
+				else timeout = setTimeout(repeat, 50);
+			};
+			timeout = setTimeout(repeat, 50);
+		} else $store = index;
 	}
 	$: ceil = Math.ceil((total - bound) / increment);
 	$: limit = ceil < 0 ? 0 : ceil;
