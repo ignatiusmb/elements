@@ -11,8 +11,8 @@
 	let show = false;
 
 	function focus(event) {
-		if (document.activeElement === input) return;
-		if (event.key === '/') event.preventDefault(), input.focus();
+		if (document.activeElement === searchbox) return;
+		if (event.key === '/') event.preventDefault(), searchbox.focus();
 	}
 </script>
 
