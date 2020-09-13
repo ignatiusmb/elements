@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## 0.6.2
+
+- Fix typo causing `input` is not defined from `SearchBar`
+
 ## 0.6.1
 
 - Add keydown listener on `SearchBar` to focus on searchbox ([#28](https://github.com/ignatiusmb/elements/pull/28))
