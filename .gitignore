@@ -1,9 +1,9 @@
 package-lock.json
 node_modules
-
 .DS_Store
 
 /dist/
+/public/build
 
 /src/icons/*
 !/src/icons/build.js
