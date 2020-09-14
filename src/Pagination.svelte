@@ -6,11 +6,12 @@
 	export let increment = bound;
 	export let tween = false;
 	import { ChevronsLeft, ChevronLeft, ChevronsRight, ChevronRight } from './icons';
+	let timeout = null;
 	function update(index) {
 		if (index < 0 || index > limit) return;
 		if (tween && (index === 0 || index === limit)) {
-			let timeout = null;
 			const repeat = () => {
+				if (timeout) clearTimeout(timeout);
 				$store = index === 0 ? $store - 1 : $store + 1;
 				if ($store === 0 || $store === limit) clearTimeout(timeout);
 				else timeout = setTimeout(repeat, 50);
