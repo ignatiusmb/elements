@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## Unreleased
+
+- Add `lazy` prop to `Image` and remove `LazyLoadImage`
+
 ## 0.6.2
 
 - Fix typo causing `input` is not defined from `SearchBar`
