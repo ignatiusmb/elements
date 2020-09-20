@@ -10,7 +10,7 @@
 <a
 	{href}
 	{download}
-	target={newTab ? '_blank' : '_self'}
+	target={newTab ? '_blank' : undefined}
 	rel={href.includes('//') ? 'noopener noreferrer' : 'prefetch'}
 	aria-label={label}
 	class="lmns lmns-link"
