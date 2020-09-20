@@ -5,12 +5,16 @@
 	export let label = null;
 	export let inherit = false;
 	export let invert = false;
+
+	// Sapper specific
+	export let noscroll = false;
 </script>
 
 <a
 	{href}
 	{download}
 	target={newTab ? '_blank' : undefined}
+	sapper:noscroll={noscroll ? 'on' : undefined}
 	rel={href.includes('//') ? 'noopener noreferrer' : 'prefetch'}
 	aria-label={label}
 	class="lmns lmns-link"
