@@ -4,9 +4,11 @@
 	export let contain = false;
 	export let overlay = false;
 	export let absolute = false;
+	export let lazyload = false;
 	export let ratio = 9 / 16;
 
 	import { fade } from 'svelte/transition';
+	import Observe from './Observe.svelte';
 	import Overlay from './Overlay.svelte';
 	let show = false;
 </script>
@@ -19,11 +21,24 @@
 	on:dblclick
 	on:mouseenter={() => (show = true)}
 	on:mouseleave={() => (show = false)}>
-	<img {src} {alt} in:fade class:contain />
-	{#if overlay}
-		<Overlay {show}>
-			<slot />
-		</Overlay>
+	{#if lazyload}
+		<Observe once let:sighted>
+			{#if sighted}
+				<img {src} {alt} in:fade class:contain />
+				{#if overlay}
+					<Overlay {show}>
+						<slot />
+					</Overlay>
+				{/if}
+			{/if}
+		</Observe>
+	{:else}
+		<img {src} {alt} in:fade class:contain />
+		{#if overlay}
+			<Overlay {show}>
+				<slot />
+			</Overlay>
+		{/if}
 	{/if}
 </div>
 
