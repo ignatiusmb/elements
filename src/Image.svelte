@@ -1,10 +1,10 @@
 <script>
 	export let src = '';
 	export let alt = '';
+	export let lazy = false;
 	export let contain = false;
 	export let overlay = false;
 	export let absolute = false;
-	export let lazyload = false;
 	export let ratio = 9 / 16;
 
 	import { fade } from 'svelte/transition';
@@ -21,7 +21,7 @@
 	on:dblclick
 	on:mouseenter={() => (show = true)}
 	on:mouseleave={() => (show = false)}>
-	{#if lazyload}
+	{#if lazy}
 		<Observe once let:sighted>
 			{#if sighted}
 				<img {src} {alt} in:fade class:contain />
