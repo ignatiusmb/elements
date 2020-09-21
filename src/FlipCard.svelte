@@ -1,6 +1,10 @@
-<div class="lmns lmns-flip-card">
+<script>
+	export let flipped = false;
+</script>
+
+<div class="lmns lmns-flip-card" class:flipped>
 	<section>
-		<slot />
+		<slot name="front" />
 	</section>
 	<section>
 		<slot name="rear" />
@@ -12,6 +16,7 @@
 		perspective: var(--perspective, 24rem);
 		width: 10em;
 		height: 10em;
+		position: relative;
 		border-radius: var(--b-radius, 0.5em);
 	}
 	section {
@@ -19,12 +24,22 @@
 
 		width: 100%;
 		height: 100%;
+		position: absolute;
 		border-radius: inherit;
 		transition: var(--t-duration, 300ms);
 
 		background-color: var(--bg-overlay, rgba(0, 0, 0, 0.5));
 	}
-	div:hover section {
-		transform: rotateY(-180deg);
+	section:last-child {
+		transform: rotateY(180deg) translateX(100%);
+		background-color: var(--bg-overlay, rgba(255, 0, 0, 0.5));
+	}
+	div.flipped section:first-child,
+	div:hover section:first-child {
+		transform: rotateY(-180deg) translateX(-100%);
+	}
+	div.flipped section:last-child,
+	div:hover section:last-child {
+		transform: rotateY(0) translateX(0);
 	}
 </style>
