@@ -14,8 +14,8 @@
 <style>
 	div {
 		perspective: var(--perspective, 24rem);
-		width: 10em;
-		height: 10em;
+		width: 100%;
+		height: 100%;
 		position: relative;
 		border-radius: var(--b-radius, 0.5em);
 	}
