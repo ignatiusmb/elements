@@ -2,7 +2,10 @@
 
 ## Unreleased
 
-- Add `lazy` prop to `Image` and remove `LazyLoadImage`
+- Add `lazy` prop to `Image` and remove `LazyLoadImage` ([#30](https://github.com/ignatiusmb/elements/pull/30))
+- Update `Link` element ([#29](https://github.com/ignatiusmb/elements/pull/29))
+  - Add new exported prop `noscroll` for Sapper noscroll functionality
+  - Remove `_self` preventing seamless navigation
 
 ## 0.6.2
 
