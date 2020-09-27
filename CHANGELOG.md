@@ -1,6 +1,6 @@
 # Elements Changelog
 
-## Unreleased
+## 0.7.0
 
 - Add `lazy` prop to `Image` and remove `LazyLoadImage` ([#30](https://github.com/ignatiusmb/elements/pull/30))
 - Update `Link` element ([#29](https://github.com/ignatiusmb/elements/pull/29))
