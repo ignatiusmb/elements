@@ -5,8 +5,8 @@
 
 	import { slide } from 'svelte/transition';
 	import { Filter } from './icons';
-	import { checkNum } from './helper';
 	import { duration } from './options';
+	import { checkNum } from './utils/helper';
 	const placeholder = 'Type your queries here (Press "/" to focus)';
 	let searchbox = null;
 	let show = false;
