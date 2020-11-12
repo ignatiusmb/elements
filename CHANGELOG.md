@@ -1,5 +1,9 @@
 # Elements Changelog
 
+## Unreleased
+
+- Add ability to pass objects as unique props in `Pagination` ([#32](https://github.com/ignatiusmb/elements/pull/32))
+
 ## 0.7.0
 
 - Add `lazy` prop to `Image` and remove `LazyLoadImage` ([#30](https://github.com/ignatiusmb/elements/pull/30))
