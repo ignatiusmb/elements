@@ -6,6 +6,7 @@
 	import { slide } from 'svelte/transition';
 	import { Filter } from './icons';
 	import { duration } from './options';
+	import { checkNum } from './utils/helper';
 	const placeholder = 'Type your queries here (Press "/" to focus)';
 	let searchbox = null;
 	let show = false;
@@ -33,9 +34,21 @@
 			{#each Object.keys(unique) as key}
 				<section>
 					<h3>{key}</h3>
-					{#each unique[key] as value}
-						<label><input type="checkbox" bind:group={filters[key]} {value} /><span>{value}</span></label>
-					{/each}
+					{#if Array.isArray(unique[key])}
+						{#each unique[key] as value}
+							<label>
+								<input type="checkbox" bind:group={filters[key]} {value} />
+								<span>{value}</span>
+							</label>
+						{/each}
+					{:else}
+						{#each Object.entries(unique[key]).sort((x, y) => y[0] - x[0]) as [val, desc]}
+							<label>
+								<input type="checkbox" bind:group={filters[key]} value={checkNum(val)} />
+								<span>{desc}</span>
+							</label>
+						{/each}
+					{/if}
 				</section>
 			{/each}
 
