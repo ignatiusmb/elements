@@ -33,7 +33,7 @@
 		<aside transition:slide={{ duration }}>
 			{#each Object.keys(unique) as key}
 				<section>
-					<h3>{key}</h3>
+					<h3>{key.replace(/_/g, ' ')}</h3>
 					{#if Array.isArray(unique[key])}
 						{#each unique[key] as value}
 							<!-- svelte-ignore a11y-label-has-associated-control -->
