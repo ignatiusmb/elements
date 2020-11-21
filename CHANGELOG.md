@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Add ability to pass objects as unique props in `Pagination` ([#32](https://github.com/ignatiusmb/elements/pull/32))
+- Add ability to use radio inputs for filters group with type of string ([#33](https://github.com/ignatiusmb/elements/pull/33))
 
 ## 0.7.0
 

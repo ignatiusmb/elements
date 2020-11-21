@@ -272,15 +272,22 @@ Pagination element handles all the complicated and unnecessary stuff for us, inc
 SearchBar element provides a searchbox and `query` to bind the value.
 
 - `query` - prop that holds the query value from the searchbox
-- `filters` - object with arrays that holds filters checked by user
-- `unique` - object with arrays consisting of unique values complementing filters
+- `filters` - object that consists of arrays or string that holds the checked value(s) by user
+- `unique` - object that consists of arrays consisting of unique values complementing filters or objects with the key as unique values and value as the displayed text
 
 ```svelte
 <script>
   // Filtered object of arrays with unique values
-  export let unique = { categories: [], tags: [] };
+  export let unique = {
+    categories: [],
+    tags: [],
+    sort_by: {
+      published: 'Last Published',
+      updated: 'Last Updated'
+    }
+  };
   import { SearchBar } from '@ignatiusmb/elements';
-  let filters = { categories: [], tags: [], sort: 'updated' };
+  let filters = { categories: [], tags: [], sort_by: 'updated', custom: 'hello' };
   let query;
 </script>
 
@@ -288,16 +295,19 @@ SearchBar element provides a searchbox and `query` to bind the value.
 <SearchBar bind:query />
 
 <!-- With filters -->
+<SearchBar bind:query bind:filters {unique} />
+
+<!-- With filters using slot -->
 <SearchBar bind:query bind:filters {unique}>
   <section>
-    <h3>Sort by</h3>
+    <h3>Satisfaction</h3>
     <label>
-      <input type="radio" bind:group={filters.sort} value="updated" />
-      <span>Last updated</span>
+      <input type="radio" bind:group={filters.custom} value="satisfied" />
+      <span>Satisfied</span>
     </label>
     <label>
-      <input type="radio" bind:group={filters.sort} value="published" />
-      <span>Date published</span>
+      <input type="radio" bind:group={filters.custom} value="mediocre" />
+      <span>Mediocre</span>
     </label>
   </section>
 </SearchBar>

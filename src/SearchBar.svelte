@@ -33,18 +33,28 @@
 		<aside transition:slide={{ duration }}>
 			{#each Object.keys(unique) as key}
 				<section>
-					<h3>{key}</h3>
+					<h3>{key.replace(/_/g, ' ')}</h3>
 					{#if Array.isArray(unique[key])}
 						{#each unique[key] as value}
+							<!-- svelte-ignore a11y-label-has-associated-control -->
 							<label>
-								<input type="checkbox" bind:group={filters[key]} {value} />
+								{#if typeof filters[key] === 'string'}
+									<input type="radio" bind:group={filters[key]} {value} />
+								{:else}
+									<input type="checkbox" bind:group={filters[key]} {value} />
+								{/if}
 								<span>{value}</span>
 							</label>
 						{/each}
 					{:else}
 						{#each Object.entries(unique[key]).sort((x, y) => y[0] - x[0]) as [val, desc]}
+							<!-- svelte-ignore a11y-label-has-associated-control -->
 							<label>
-								<input type="checkbox" bind:group={filters[key]} value={checkNum(val)} />
+								{#if typeof filters[key] === 'string'}
+									<input type="radio" bind:group={filters[key]} value={checkNum(val)} />
+								{:else}
+									<input type="checkbox" bind:group={filters[key]} value={checkNum(val)} />
+								{/if}
 								<span>{desc}</span>
 							</label>
 						{/each}
